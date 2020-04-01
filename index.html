@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            setInterval(function (){
+                
+                let a =document.getElementById('r').value;
+                
+                let d =document.getElementById('g').value;
+
+                let c =document.getElementById('b').value;
+                
+                document.getElementById('F').innerHTML = `RED ${a} GREEN ${d} BLUE ${c}`;
+                
+                document.getElementById('F').style.color="rgb("+a+","+d+","+c+")";
+                
+            },1);
+        </script>
+    </head>
+<body>
+
+
+<p id="F"></p>
+
+<input type="range" id="r" min="0" max="255">
+<br/>
+
+<input type="range" id="g" min="0" max="255">
+<br/>
+
+<input type="range" id="b" min="0" max="255">
+<br/>
+
+</body>
+</html> 
