@@ -2,7 +2,7 @@
 <html>
     <head>
         <script>
-            setInterval(function (){
+            let s= function (){
                 
                 let a =document.getElementById('r').value;
                 
@@ -14,7 +14,7 @@
                 
                 document.getElementById('F').style.color="rgb("+a+","+d+","+c+")";
                 
-            },1);
+            }
         </script>
     </head>
 <body>
@@ -22,13 +22,13 @@
 
 <p id="F"></p>
 
-<input type="range" id="r" min="0" max="255">
+<input type="range" id="r" min="0" max="255"  onchange='s()'   >
 <br/>
 
-<input type="range" id="g" min="0" max="255">
+<input type="range" id="g" min="0" max="255"  onchange='s()' >
 <br/>
 
-<input type="range" id="b" min="0" max="255">
+<input type="range" id="b" min="0" max="255"  onchange='s()'>
 <br/>
 
 </body>
